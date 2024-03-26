@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dado</title>
+    <style>
+        h1 {
+            Font: Normal 20pt Arial;
+            color: rgb(0, 0, 0)e;
+            width: 350px;
+            height: 350px;
+            line-height: 350px;
+            text-align: center;
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="dado" onclick="clicou()"> Clique para rolar </h1>
+    <script>
+        function clicou() {
+            var girar = window.document.getElementById('dado')
+            girar.innerText = parseInt(Math.random() * (100 - 1) + 1)
+        }
+    </script>
+
+</body>
+
+</html>

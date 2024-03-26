@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body{
+            background-color: rgb(52, 125, 235);
+            color: rgb(255, 255, 255);
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p id="paragrafo2">
+        Apredendo a usa o <strong>DOM</strong> em JavaScript.
+    </p>
+    <div name="divisoria"> 
+        Clique em mim 1 
+    </div>
+    <div name="divisoria"> 
+        Clique em mim 2 
+    </div>
+    <p class="paragrafo3"> 
+        Não clique em mim
+    </p>
+    <p class="exemplo">
+        Alguma coisa
+    </p>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0]
+            p1.style.color = 'blue'
+        var p2 = window.document.getElementById('paragrafo2')
+            p2.style.color = 'yellow'
+        var p3 = window.document.getElementsByName('divisoria')[0]
+            p3.style.color = 'brown'
+        var p5 = window.document.getElementsByName('divisoria')[1]
+            p5.style.color = 'brown'
+        var p6 = window.document.getElementsByClassName("paragrafo3")  
+            p6[0].style.color = 'black'
+        var p7 = window.document.querySelectorAll('.exemplo')
+            p7[0].style.color = 'yellow'
+    </script>
+</body>
+</html>

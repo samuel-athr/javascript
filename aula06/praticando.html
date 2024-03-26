@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades</title>
+
+</head>
+<body>
+<script>
+   var nome = window.prompt('Qual é o seu nome?')
+   var idade = Number(window.prompt('Qual é a sua idade?'))
+   var numero = Number(window.prompt('Digite um número'))
+   var IeN = idade + numero
+   document.write (`Esse é o seu nome: ${nome} <br/>`)
+   document.write (`Seu nome tem : ${nome.length} letras <br/>`)
+   document.write (`Esse é o seu nome maúisculo: ${nome.toUpperCase()}<br/>`)   
+   document.write (`Esse é o seu nome minúsculo: ${nome.toLowerCase()}<br/>`)    
+   document.write (`Essa é sua idade daqui  ${numero} anos: ${IeN} <br/>`)    
+   document.write (`Esse é seu numero em reais: ${numero.toLocaleString('pt-BR',{style:'currency',currency:'BRl'})}<br/>`)
+</script>
+    
+</body>
+</html>
